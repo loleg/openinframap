@@ -24,6 +24,7 @@
     { "id": "telecoms_communication_line", "description": "Telecoms lines", "fields": {} },
     { "id": "telecoms_data_center", "description": "Telecoms datacenters and exchanges", "fields": {} },
     { "id": "telecoms_mast", "description": "Communications masts", "fields": {} },
+    { "id": "telecoms_post", "description": "Postal offices", "fields": {} },
     { "id": "petroleum_pipeline", "description": "Petroleum pipelines", "fields": {} },
     { "id": "petroleum_well", "description": "Petroleum wells", "fields": {} },
     { "id": "petroleum_site", "description": "Petroleum sites", "fields": {} },

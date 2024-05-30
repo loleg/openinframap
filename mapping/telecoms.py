@@ -35,3 +35,10 @@ table(
     "point",
     columns=[type_col],
 )
+
+table(
+    "post",
+    {"amenity": ["post_office"]},
+    "point",
+    columns=[type_col],
+)

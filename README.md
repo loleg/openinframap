@@ -35,7 +35,7 @@ Imposm runs as a service with the `-expiretiles-dir` option:
 
 The low-zoom layers are seeded daily with:
 
-	/usr/local/bin/tegola cache seed --bounds="-180,-85.0511,180,85.0511" --min-zoom 2 --max-zoom 6 --overwrite --config /home/osm/styles/tegola/config.toml
+	/usr/local/bin/tegola cache seed --bounds="11.14,-78.80,-37.57,-28.85" --min-zoom 2 --max-zoom 6 --overwrite --config /home/osm/styles/tegola/config.toml
 
 Invalidated tiles are removed every minute:
 

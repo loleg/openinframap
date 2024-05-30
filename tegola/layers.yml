@@ -339,6 +339,16 @@ layers:
        OR tags -> 'tower:type' IN ('communication', 'radio', 'antenna'))
       AND geometry && !BBOX!
 
+  - name: telecoms_post
+    geometry_type: Point
+    min_zoom: 10
+    id_field: osm_id
+    field_sets: [geom_centroid, name, wiki, start_date]
+    from: osm_post
+    where: >
+      (tags -> 'post:type' IN ('post_office'))
+      AND geometry && !BBOX!
+
   - name: petroleum_pipeline
     geometry_type: LineString
     min_zoom: 2

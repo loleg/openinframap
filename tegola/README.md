@@ -38,9 +38,9 @@ Tegola is started with:
 You should run both container, main and expiry as to serve tiles and handle expiry logs coming from imposm
 
 ```sh
-docker run -d --rm -v /tmp:/tmp -e BOUNDS=-180,-85.0511,180,85.0511 -e DB_URI=postgres://user:password@host:port/database openinframap/tileserver
+docker run -d --rm -v /tmp:/tmp -e BOUNDS=11.14,-78.80,-37.57,-28.85 -e DB_URI=postgres://user:password@host:port/database openinframap/tileserver
 
-docker run -d --rm -v /tmp:/tmp -e BOUNDS=-180,-85.0511,180,85.0511 -e DB_URI=postgres://user:password@host:port/database openinframap/tileserverexpiry
+docker run -d --rm -v /tmp:/tmp -e BOUNDS=11.14,-78.80,-37.57,-28.85 -e DB_URI=postgres://user:password@host:port/database openinframap/tileserverexpiry
 ```
 
 `BOUNDS` states which extent is served by the tileserver  

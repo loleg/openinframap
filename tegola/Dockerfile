@@ -10,7 +10,7 @@ RUN python generate_tegola_config.py ./tegola.yml ./layers.yml > ./config.toml
 
 FROM gospatial/tegola:v0.16.0
 
-ENV BOUNDS="-180,-85.0511,180,85.0511" \
+ENV BOUNDS="11.14,-78.80,-37.57,-28.85" \
     DB_URI=postgres://user:password@host:5432/database
     
 COPY --from=build /app/config.toml /etc/tegola/config.toml
